@@ -53,4 +53,16 @@
     Private Sub cmdParams_Click(sender As Object, e As EventArgs) Handles cmdParams.Click
         oMediaSearch.getFrmParams.showForm()
     End Sub
+
+    Private Sub lbSearchResults_DoubleClick(sender As Object, e As EventArgs) Handles lbSearchResults.DoubleClick
+        Dim frmMediaInfo As frmMediaInfo
+
+        frmMediaInfo = oMediaSearch.getFrmMediaInfo
+
+        'Set the media item somehow? and validate
+
+        frmMediaInfo.showForm()
+
+    End Sub
+
 End Class
